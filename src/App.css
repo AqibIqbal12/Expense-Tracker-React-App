@@ -1,33 +1,26 @@
-@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
-
-:root {
-  --box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-}
-
 * {
   box-sizing: border-box;
-}
-
-body {
-  background-color: #f7f7f7;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
   margin: 0;
-  font-family: 'Lato', sans-serif;
+  padding: 0;
 }
 
 .container {
-  margin: 30px auto;
-  width: 350px;
+  width: 30vw;
+  /* height: 100vh; */
+  background: #1abc9c;
+  border: 6px solid #1C6EA4;
+  border-radius: 40px 40px 0px 0px;
+  margin: auto;
+  margin-top: 20px;
+  
 }
 
 h1 {
   letter-spacing: 1px;
   margin: 0;
+  text-align: center;
 }
+
 
 h3 {
   border-bottom: 1px solid #bbb;
@@ -36,8 +29,9 @@ h3 {
 }
 
 h4 {
-  margin: 0;
+  margin-top: 5px;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .inc-exp-container {
@@ -49,12 +43,12 @@ h4 {
   margin: 20px 0;
 }
 
-.inc-exp-container > div {
+.inc-exp-container>div {
   flex: 1;
   text-align: center;
 }
 
-.inc-exp-container > div:first-of-type {
+.inc-exp-container>div:first-of-type {
   border-right: 1px solid #dedede;
 }
 
@@ -77,8 +71,7 @@ label {
   margin: 10px 0;
 }
 
-input[type='text'],
-input[type='number'] {
+input[type='text'], input[type='number'] {
   border: 1px solid #dedede;
   border-radius: 2px;
   display: block;
@@ -95,7 +88,7 @@ input[type='number'] {
   border: 0;
   display: inline-block;
   font-size: 16px;
-  margin: 20px 0px 0px 0px;  
+  margin: 20px 0px 0px 0px;
   padding: 10px;
   width: 49%;
 }
@@ -108,7 +101,7 @@ input[type='number'] {
   border: 0;
   display: inline-block;
   font-size: 16px;
-  margin: 20px 0px 0px 7px;  
+  margin: 20px 0px 0px 7px;
   padding: 10px;
   width: 49%;
 }
@@ -121,13 +114,12 @@ input[type='number'] {
   border: 0;
   display: inline-block;
   font-size: 16px;
-  margin: 10px 0px 0px 0px;  
+  margin: 10px 0px 0px 0px;
   padding: 10px;
   width: 100%;
 }
 
-.btn:focus,
-.delete-btn:focus {
+.btn:focus, .delete-btn:focus {
   outline: 0;
 }
 
@@ -158,40 +150,138 @@ input[type='number'] {
 
 .delete-btn {
   cursor: pointer;
-  background-color: #e74c3c;
   border: 0;
-  color: #fff;
   font-size: 20px;
-  line-height: 20px;
   padding: 2px 5px;
   position: absolute;
   top: 50%;
-  left: 0;
+  left: -1.2%;
   transform: translate(-100%, -50%);
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.list li:hover .delete-btn {
-  opacity: 1;
+  /* opacity: 1; */
 }
 
 .edit-btn {
   cursor: pointer;
-  background-color: #e74c3c;
   border: 0;
-  color: #fff;
   font-size: 20px;
-  line-height: 20px;
   padding: 2px 5px;
   position: absolute;
   top: 50%;
-  left: 114.4%;
-  transform: translate(-100%, -50%);
-  opacity: 0;
-  transition: opacity 0.3s ease;
+  left: 107.5%;
+  transform: translate(-100%, -60%);
+  /* opacity: 1; */
 }
 
-.list li:hover .edit-btn {
-  opacity: 1;
+
+@media screen and (max-width: 1203px) {
+  .container {
+    width: 50vw;
+    /* height: 100vh; */
+  }
+  h1{
+    font-size: 23px;
+    
+  }
+
+}
+
+@media screen and (max-width: 722px) {
+  .container {
+    width: 70vw;
+    /* height: 100vh; */
+  }
+}
+
+
+@media screen and (max-width: 515px) {
+  
+  h1{
+    font-size: 23px;
+    
+  }
+  .edit-btn {
+    cursor: pointer;
+    border: 0;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 111%;
+    transform: translate(-100%, -60%);
+    /* opacity: 1; */
+  }
+  .form_btns{
+    display: flex;
+    justify-content: center;
+  } 
+  .btn-income {
+    cursor: pointer;
+    background-color: #2ecc71;
+    box-shadow: var(--box-shadow);
+    color: #fff;
+    border: 0;
+    display: inline-block;
+    font-size: 14px;
+    margin: 20px 0px 0px 0px;
+    padding: 10px;
+  }
+  .btn-expense {
+    cursor: pointer;
+    background-color: #c0392b;
+    box-shadow: var(--box-shadow);
+    color: #fff;
+    border: 0;
+    display: inline-block;
+    font-size: 14px;
+    margin: 20px 0px 0px 7px;
+    padding: 10px;
+    /* width: 39%; */
+  }
+}
+
+@media screen and (max-width: 376px) {
+  
+  h1{
+    font-size: 16px;
+
+  }
+  .edit-btn {
+    cursor: pointer;
+    border: 0;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 115.5%;
+    transform: translate(-100%, -60%);
+    opacity: 1;
+    transition: opacity 0.3s ease;
+  }
+  .form_btns{
+    display: flex;
+    justify-content: center;
+    /* background-color: chocolate; */
+  } 
+  .btn-income {
+    cursor: pointer;
+    background-color: #2ecc71;
+    box-shadow: var(--box-shadow);
+    color: #fff;
+    border: 0;
+    display: inline-block;
+    font-size: 14px;
+    margin: 20px 0px 0px 0px;
+    padding: 10px;
+    /* width: 39%; */
+  }
+  .btn-expense {
+    cursor: pointer;
+    background-color: #c0392b;
+    box-shadow: var(--box-shadow);
+    color: #fff;
+    border: 0;
+    display: inline-block;
+    font-size: 14px;
+    margin: 20px 0px 0px 7px;
+    padding: 10px;
+    /* width: 39%; */
+  }
 }
