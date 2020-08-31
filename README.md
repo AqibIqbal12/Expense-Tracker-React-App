@@ -1,6 +1,6 @@
 # Expense Tracker
 
-Using:
+Built with:
 - ReactJS
 - TypeScipt
 - PWA support
