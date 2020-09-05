@@ -36,7 +36,6 @@ h4 {
 
 .inc-exp-container {
   background-color: #fff;
-  box-shadow: var(--box-shadow);
   padding: 20px;
   display: flex;
   justify-content: space-between;
@@ -83,7 +82,6 @@ input[type='text'], input[type='number'] {
 .btn-income {
   cursor: pointer;
   background-color: #2ecc71;
-  box-shadow: var(--box-shadow);
   color: #fff;
   border: 0;
   display: inline-block;
@@ -96,7 +94,6 @@ input[type='text'], input[type='number'] {
 .btn-expense {
   cursor: pointer;
   background-color: #c0392b;
-  box-shadow: var(--box-shadow);
   color: #fff;
   border: 0;
   display: inline-block;
@@ -109,7 +106,6 @@ input[type='text'], input[type='number'] {
 .btn-reset {
   cursor: pointer;
   background-color: cadetblue;
-  box-shadow: var(--box-shadow);
   color: #fff;
   border: 0;
   display: inline-block;
@@ -131,7 +127,6 @@ input[type='text'], input[type='number'] {
 
 .list li {
   background-color: #fff;
-  box-shadow: var(--box-shadow);
   color: #333;
   display: flex;
   justify-content: space-between;
@@ -197,16 +192,9 @@ input[type='text'], input[type='number'] {
   
   h1{
     font-size: 23px;
-    
   }
   .edit-btn {
-    cursor: pointer;
-    border: 0;
-    font-size: 20px;
-    position: absolute;
-    top: 50%;
     left: 111%;
-    transform: translate(-100%, -60%);
     /* opacity: 1; */
   }
   .form_btns{
@@ -214,26 +202,10 @@ input[type='text'], input[type='number'] {
     justify-content: center;
   } 
   .btn-income {
-    cursor: pointer;
-    background-color: #2ecc71;
-    box-shadow: var(--box-shadow);
-    color: #fff;
-    border: 0;
-    display: inline-block;
     font-size: 14px;
-    margin: 20px 0px 0px 0px;
-    padding: 10px;
   }
   .btn-expense {
-    cursor: pointer;
-    background-color: #c0392b;
-    box-shadow: var(--box-shadow);
-    color: #fff;
-    border: 0;
-    display: inline-block;
     font-size: 14px;
-    margin: 20px 0px 0px 7px;
-    padding: 10px;
     /* width: 39%; */
   }
 }
@@ -245,15 +217,7 @@ input[type='text'], input[type='number'] {
 
   }
   .edit-btn {
-    cursor: pointer;
-    border: 0;
-    font-size: 20px;
-    position: absolute;
-    top: 50%;
     left: 115.5%;
-    transform: translate(-100%, -60%);
-    opacity: 1;
-    transition: opacity 0.3s ease;
   }
   .form_btns{
     display: flex;
@@ -261,27 +225,11 @@ input[type='text'], input[type='number'] {
     /* background-color: chocolate; */
   } 
   .btn-income {
-    cursor: pointer;
-    background-color: #2ecc71;
-    box-shadow: var(--box-shadow);
-    color: #fff;
-    border: 0;
-    display: inline-block;
     font-size: 14px;
-    margin: 20px 0px 0px 0px;
-    padding: 10px;
     /* width: 39%; */
   }
   .btn-expense {
-    cursor: pointer;
-    background-color: #c0392b;
-    box-shadow: var(--box-shadow);
-    color: #fff;
-    border: 0;
-    display: inline-block;
     font-size: 14px;
-    margin: 20px 0px 0px 7px;
-    padding: 10px;
     /* width: 39%; */
   }
 }
