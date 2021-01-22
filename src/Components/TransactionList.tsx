@@ -8,7 +8,7 @@ export const TransactionList = () => {
 
     return (
         <>
-            <h3>Historyss</h3>
+            <h3>Historys</h3>
 
             <ul className="list">
                 {
